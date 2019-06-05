@@ -1,22 +1,48 @@
 #title-container{
 	text-align: center;
+  background: #353946;
 }
 
 .titleNameContainer {
   	font-size: 15px;
   	text-align: center;
-  	height: 500px;
+  	height: 400px;
   	padding-left: 50px;
   	padding-right: 50px;
   	background-repeat: no-repeat;
     background-position: center;
   	display: block;
   	margin:auto;
-    background: #fff;
+    background: #292C33;
 }
 
-.titleNameText {
+#titleNameText {
 	padding-top: 200px;
-	text-decoration-color: #fff;
-	text-align: center;
+	text-align: right;
+  color: #FF538E !important;
+}
+
+#titleDescription {
+  text-align: right;
+  color: #FF538E !important;
+}
+
+#projectMiddleComponentClass {
+  margin-left: 20px;
+  margin-top: 20px;
+  color: #44C37F !important;
+  text-align: left;
+}
+
+#designMiddleComponentClass {
+  margin-left: 20px;
+  color: #44C37F !important;
+  text-align: left;
+}
+
+.rowC {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: row;
 }

@@ -1,5 +1,5 @@
 import React from 'react';
 
-export let MiddleComponent = (props) => (
-  <h2>This is Middle Component</h2>
+export let MiddleComponent = ({middleComponent}) => (
+  <h2 className="font-weight-light" id={middleComponent.css}>{middleComponent.data}</h2>
 );

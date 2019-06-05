@@ -5,8 +5,8 @@ import '../../../styles/projectStyle.css';
 export let Project = ({project}) => (
       <article className="projectContainer" style={{ backgroundImage: `url(${project.backgroundImg.background})`}}>
         <div className="titleContainer">
-          <h2>{project.title}</h2>
-          <p>{project.description}</p>
+          <h3 className="font-weight-light" id="greenTextClass" >{project.title}</h3>
+          <p id="greenTextClass">{project.description}</p>
         </div>
       </article>
     );

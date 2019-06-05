@@ -1,11 +1,40 @@
 
 .projectContainer {
-	height: 350px;
-	width: 350px;
-	background: #fff;
+	margin: 15px;
+	padding-top: 300px;
+	height: 400px;
+	width: 450px;
+	background: #292C33;
 }
 
 
 .titleContainer {
 	display: inline-block;
+}
+
+.projectContainerLong{
+	margin: 15px;
+	padding-top: 250px;
+	height: 350px;
+	width: all;
+	background: #292C33;
+}
+
+
+#blueTextColor {
+	color: #7AD5E9 !important;
+}
+
+
+.greenProject {
+
+}
+
+
+.greenTextClass{
+  color: #44C37F !important;
+}
+
+#greenTextClass{
+  color: #44C37F !important;
 }

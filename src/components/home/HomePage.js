@@ -3,6 +3,7 @@ import {Link} from 'react-router';
 import {bindActionCreators} from  'redux';
 import {MiddleComponent} from './MiddleComponent';
 import {Project} from './projects/Project';
+import {LongProject} from './projects/LongProject';
 import {connect} from 'react-redux';
 
 import background from '../../../images/background.jpeg';
@@ -12,10 +13,19 @@ class HomePage extends React.Component {
 	
 	constructor(props, context){
 		super(props, context);
+		this.projectMiddleComponent = {
+			css: "projectMiddleComponentClass",
+			data: "Projects"
+		};
+		this.designMiddleComponent = {
+			css: "projectMiddleComponentClass",
+			data: "Designs"
+		};
 		this.state = {
 			project: {
 				title: "WaterMeter",
 				description: "Android app which shows the amount of water consumed",
+				cssClassName: "greenProject",
 				backgroundImg: ""
 			}
 		};
@@ -45,13 +55,19 @@ class HomePage extends React.Component {
 		return (
 			<div className="jumbotron" id="title-container">
 			<div className="titleNameContainer">
-				<h1 className="titleNameText">Abhishek Shetye</h1>
-				<p>A developer who likes to build cool stuff. Ping me at [ abhishekrshetye@gmail.com ]</p>
+				<h1 className="display-3" id="titleNameText">Abhishek Shetye</h1>
+				<p className="lead" id="titleDescription" >A developer who likes to build cool stuff. Ping me at [ abhishekrshetye@gmail.com ]</p>
 			</div>
 				{this.props.projects.map(this.projectRow)}
-				<MiddleComponent/>
+				<MiddleComponent middleComponent={this.projectMiddleComponent}/>
 				{console.log(this.state.project)}
-				<Project project={this.state.project}/>
+				<div className="rowC">
+					<Project project={this.state.project}/>
+					<Project project={this.state.project}/>
+					<Project project={this.state.project}/>
+				</div>
+				<LongProject project={this.state.project}/>
+				<MiddleComponent middleComponent={this.designMiddleComponent}/>
 				<input
 					type="text"
 					onChange={this.onTitleChange}
