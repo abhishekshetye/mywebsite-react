@@ -1,3 +1,22 @@
 #title-container{
 	text-align: center;
 }
+
+.titleNameContainer {
+  	font-size: 15px;
+  	text-align: center;
+  	height: 500px;
+  	padding-left: 50px;
+  	padding-right: 50px;
+  	background-repeat: no-repeat;
+    background-position: center;
+  	display: block;
+  	margin:auto;
+    background: #fff;
+}
+
+.titleNameText {
+	padding-top: 200px;
+	text-decoration-color: #fff;
+	text-align: center;
+}

@@ -1,0 +1,11 @@
+
+.projectContainer {
+	height: 350px;
+	width: 350px;
+	background: #fff;
+}
+
+
+.titleContainer {
+	display: inline-block;
+}

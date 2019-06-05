@@ -1,16 +1,23 @@
 import React, {PropTypes} from 'react';
 import {Link} from 'react-router';
-import {bindActionCreators} from 'redux';
+import {bindActionCreators} from  'redux';
 import {MiddleComponent} from './MiddleComponent';
+import {Project} from './projects/Project';
 import {connect} from 'react-redux';
 
+import background from '../../../images/background.jpeg';
+import '../../styles/styles.css';
 
 class HomePage extends React.Component { 
 	
 	constructor(props, context){
 		super(props, context);
 		this.state = {
-			project: {title: "Abhishek"}
+			project: {
+				title: "WaterMeter",
+				description: "Android app which shows the amount of water consumed",
+				backgroundImg: ""
+			}
 		};
 
 		this.onTitleChange = this.onTitleChange.bind(this);
@@ -37,9 +44,14 @@ class HomePage extends React.Component {
 	render(){
 		return (
 			<div className="jumbotron" id="title-container">
-				<h1>Abhishek Shetye</h1>
+			<div className="titleNameContainer">
+				<h1 className="titleNameText">Abhishek Shetye</h1>
+				<p>A developer who likes to build cool stuff. Ping me at [ abhishekrshetye@gmail.com ]</p>
+			</div>
 				{this.props.projects.map(this.projectRow)}
 				<MiddleComponent/>
+				{console.log(this.state.project)}
+				<Project project={this.state.project}/>
 				<input
 					type="text"
 					onChange={this.onTitleChange}
