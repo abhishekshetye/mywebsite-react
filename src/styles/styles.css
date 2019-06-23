@@ -47,6 +47,14 @@
   flex-direction: row;
 }
 
+.poster1{
+  width: 1000px;
+  display: block;
+}
+
+.inline{
+  display: flex;
+}
 
 .rowC_Design {
   display: flex;

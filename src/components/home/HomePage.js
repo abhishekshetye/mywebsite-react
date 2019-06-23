@@ -7,6 +7,7 @@ import {LongProject} from './projects/LongProject';
 import {connect} from 'react-redux';
 
 import background from '../../../images/background.jpeg';
+import poster1 from '../../../images/poster1.png';
 import '../../styles/styles.css';
 
 class HomePage extends React.Component { 
@@ -54,7 +55,8 @@ class HomePage extends React.Component {
 	render(){
 		return (
 			<div className="jumbotron" id="title-container">
-			<div className="titleNameContainer">
+			<div className="titleNameContainer inline">
+				<img className="poster1" src={poster1}/>
 				<h1 className="display-3" id="titleNameText">Abhishek Shetye</h1>
 				<p className="lead" id="titleDescription" >A developer who likes to build cool stuff. Ping me at [ abhishekrshetye@gmail.com ]</p>
 			</div>
