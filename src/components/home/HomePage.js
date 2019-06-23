@@ -68,6 +68,11 @@ class HomePage extends React.Component {
 				</div>
 				<LongProject project={this.state.project}/>
 				<MiddleComponent middleComponent={this.designMiddleComponent}/>
+				<div className="rowC_Design">
+					<Project project={this.state.project}/>
+					<Project project={this.state.project}/>
+					<Project project={this.state.project}/>
+				</div>
 				<input
 					type="text"
 					onChange={this.onTitleChange}
